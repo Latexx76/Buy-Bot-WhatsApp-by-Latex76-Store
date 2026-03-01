@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latex76 Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<<header class="custom-header">
+  <div class="header-content">
+<div class="logo-box">
+  <img src="pp jb.png" alt="Logo" id="logoPP">
+</div>
+
+<!-- Overlay Zoom -->
+<div id="zoomOverlay">
+  <img src="pp jb.png" id="zoomImage">
+</div>
+
+    <div class="header-text">
+      <h1>LATEX76 STORE</h1>
+      <p>TOKO BOT WA TERPERCAYA</p>
+    </div>
+  </div>
+</header>
+
+<section class="bot-section">
+  <h2>🤖 Pilih Jenis Bot</h2>
+  <div class="bot-list">
+
+         <div class="bot-item coming-soon">
+     <span class="badge">COMING SOON</span>
+      Vita MD
+    </div>
+
+    <div class="bot-item coming-soon">
+      <span class="badge">COMING SOON</span>
+      Riselia MD
+    </div>
+         <div class="bot-item coming-soon">
+     <span class="badge">COMING SOON</span>
+      Ochobot MD
+    </div>
+    <div class="bot-item"
+      data-nama="Xavira.ai"
+      data-fitur="• AI Premium\n• GPT Menu\n• Auto Image\n• Voice AI\n• Smart Reply">
+      Xavira.ai
+    </div>
+
+  </div>
+</section>
+
+<div id="popupFitur" class="popup"></div>
+
+<!-- FLASH SALE -->
+<div class="flash-sale">
+  🔥 FLASH SALE BERAKHIR DALAM:
+  <span id="timer">00:00:00</span>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  📊 Total Order: <span id="totalOrder">0</span>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>📦 BASIC (Member)</h2>
+    <div class="price-list">
+      <button onclick="beli('Basic 1 Minggu - Rp3.000')">1 Minggu - Rp3.000</button>
+      <button onclick="beli('Basic 2 Minggu - Rp6.000')">2 Minggu - Rp6.000</button>
+      <button onclick="beli('Basic 3 Minggu - Rp9.000')">3 Minggu - Rp9.000</button>
+      <button onclick="beli('Basic 1 Bulan - Rp10.000')">1 Bulan - Rp10.000</button>
+    </div>
+  </div>
+
+  <div class="card premium-card">
+    <h2>👑 PREMIUM (Owner)</h2>
+    <div class="price-list">
+
+      <button onclick="beli('Premium 1 Minggu - Rp5.000')">1 Minggu - Rp5.000</button>
+      <button onclick="beli('Premium 2 Minggu - Rp10.000')">2 Minggu - Rp10.000</button>
+      <button onclick="beli('Premium 3 Minggu - Rp15.000')">3 Minggu - Rp15.000</button>
+
+<button class="discount"
+  data-price="20000"
+  data-discount="20"
+  data-durasi="1 Bulan"
+  onclick="beliDiskon(this, 'Premium 1 Bulan')">
+
+  <span class="badge">20%</span>
+
+  <div class="durasi">1 Bulan</div>
+
+  <span class="old-price">Rp20.000</span>
+  <span class="new-price"></span>
+
+</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="btn-group">
+    <a href="#" id="adminBtn" class="admin-btn">💬 Tanya Admin</a>
+    <a href="#" id="grupLink" class="join-btn">🔥 Join Grup JB 🔥</a>
+  </div>
+  <div class="note">
+    Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
