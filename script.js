@@ -113,7 +113,7 @@ function beliDiskon(element, namaPaket) {
 ⏳ Durasi: ${durasi}
 💰 Harga Diskon: Rp${finalPrice.toLocaleString("id-ID")} (${discount}% OFF)
 
-Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏`;
+_Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏_`;
 
   window.open(
     `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
@@ -195,7 +195,7 @@ function matikanFlashSale() {
 ⏳ Durasi: ${durasi}
 💰 Harga: Rp${price.toLocaleString("id-ID")}
 
-Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏`;
+_Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏_`;
 
       window.open(
         `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
