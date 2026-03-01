@@ -113,7 +113,7 @@ function beliDiskon(element, namaPaket) {
 ⏳ Durasi: ${durasi}
 💰 Harga Diskon: Rp${finalPrice.toLocaleString("id-ID")} (${discount}% OFF)
 
-_Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏_`;
+Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏`;
 
   window.open(
     `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
@@ -195,7 +195,7 @@ function matikanFlashSale() {
 ⏳ Durasi: ${durasi}
 💰 Harga: Rp${price.toLocaleString("id-ID")}
 
-_Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏_`;
+Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏`;
 
       window.open(
         `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
@@ -251,3 +251,52 @@ logo.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   overlay.style.display = "none";
 });
+
+// ================= BELI MURSUN NORMAL =================
+function beliMursun(paket) {
+  
+  tambahOrder();
+  
+  let pesan = `Halo kak saya mau order:
+
+🚀 Produk: Suntik Followers (Mursun)
+📦 Paket: ${paket}
+
+Mohon segera di proses yah kak 🙏
+
+_NB : Silahkan tunggu chat dibalas! _`;
+  
+  window.open(
+    `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
+    '_blank'
+  );
+}
+
+
+// ================= BELI MURSUN DISKON =================
+function beliDiskonMursun(element, namaPaket) {
+  
+  tambahOrder();
+  
+  let price = parseInt(element.dataset.price);
+  let discount = parseInt(element.dataset.discount);
+  let durasi = element.dataset.durasi;
+  
+  let finalPrice = price - (price * discount / 100);
+  
+  let pesan = `Halo kak saya mau order:
+
+🚀 Produk: Suntik Followers (Mursun)
+📦 Paket: ${namaPaket}
+📘 Detail: ${durasi}
+💰 Harga Diskon: Rp${finalPrice.toLocaleString("id-ID")} (${discount}% OFF)
+
+Mohon segera di proses yah kak 🙏
+
+_NB : Silahkan tunggu chat dibalas!_`;
+  
+  window.open(
+    `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
+    '_blank'
+  );
+                                   }
