@@ -1,5 +1,5 @@
 // ================= CONFIG =================
-const nomorWA = "6283824063521";
+const nomorWA = "6285725539184";
 const linkGrup = "https://chat.whatsapp.com/BRpml1sr4DW82DLmyaLyXh?mode=gi_t";
 
 // ================= INIT =================
