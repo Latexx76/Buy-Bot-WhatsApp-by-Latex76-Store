@@ -81,7 +81,9 @@ function beli(paket) {
 🤖 Bot: ${botTerpilih}
 📦 Paket: ${paket}
 
-Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏`;
+Mohon untuk segera diproses ya kak 🙏
+
+_Nb : Silahkan tunggu chat dibalas dan akan diproses setelahnya_`;
 
   window.open(
     `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
@@ -113,7 +115,9 @@ function beliDiskon(element, namaPaket) {
 ⏳ Durasi: ${durasi}
 💰 Harga Diskon: Rp${finalPrice.toLocaleString("id-ID")} (${discount}% OFF)
 
-Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏`;
+Mohon untuk segera diproses ya kak 🙏
+
+_Nb : Silahkan tunggu chat dibalas dan akan diproses setelahnya_`;
 
   window.open(
     `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
@@ -195,7 +199,9 @@ function matikanFlashSale() {
 ⏳ Durasi: ${durasi}
 💰 Harga: Rp${price.toLocaleString("id-ID")}
 
-Silahkan tunggu chat dibalas dan akan diproses setelahnya 🙏`;
+Mohon untuk segera diproses ya kak 🙏
+
+_Nb : Silahkan tunggu chat dibalas dan akan diproses setelahnya_`;
 
       window.open(
         `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
@@ -264,7 +270,7 @@ function beliMursun(paket) {
 
 Mohon segera di proses yah kak 🙏
 
-_NB : Silahkan tunggu chat dibalas! _`;
+_NB : Silahkan tunggu chat dibalas!_`;
   
   window.open(
     `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
