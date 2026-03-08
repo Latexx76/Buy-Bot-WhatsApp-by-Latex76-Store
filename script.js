@@ -120,8 +120,8 @@ function beliDiskon(element, namaPaket) {
 💰 Harga Diskon: Rp${finalPrice.toLocaleString("id-ID")} (${discount}% OFF)
 
 _*Di Tempat Store ?*_
-_🏪 Store: $ { namaStore }_
-_🆔 Partner ID: $ { partnerID } _
+_🏪 Store: ${ namaStore }_
+_🆔 Partner ID: ${ partnerID }_
 
 Mohon untuk segera diproses ya kak 🙏
 
@@ -206,8 +206,8 @@ function matikanFlashSale() {
 💰 Harga: Rp${price.toLocaleString("id-ID")}
 
 _ * Di Tempat Store ?*_
-_🏪 Store: $ { namaStore }_
-_🆔 Partner ID: $ { partnerID }_
+_🏪 Store: ${ namaStore }_
+_🆔 Partner ID: ${ partnerID }_
 
 Mohon untuk segera diproses ya kak 🙏
 
