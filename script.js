@@ -2,6 +2,10 @@
 const nomorWA = "6285725539184";
 const linkGrup = "https://chat.whatsapp.com/BRpml1sr4DW82DLmyaLyXh?mode=gi_t";
 
+// IDENTITAS STORE (UNTUK BEDAKAN ADMIN / PARTNER)
+const namaStore = "Latex76 Store";
+const partnerID = "Own3521-real";
+
 // ================= INIT =================
 document.getElementById("grupLink").href = linkGrup;
 
@@ -13,11 +17,9 @@ document.querySelectorAll(".bot-item").forEach(bot => {
 
   if (bot.classList.contains("coming-soon")) return;
 
-  // 1x klik = pilih bot
   bot.addEventListener("click", function() {
     botTerpilih = this.dataset.nama;
 
-    // efek aktif
     document.querySelectorAll(".bot-item").forEach(b => {
       b.style.border = "none";
     });
@@ -25,7 +27,6 @@ document.querySelectorAll(".bot-item").forEach(bot => {
     this.style.border = "2px solid #22c55e";
   });
 
-  // 2x klik = tampilkan fitur
   bot.addEventListener("dblclick", function() {
     popup.style.display = "block";
     popup.innerText =
@@ -34,7 +35,6 @@ document.querySelectorAll(".bot-item").forEach(bot => {
 
 });
 
-// klik luar popup = tutup
 document.addEventListener("click", function(e) {
   if (!e.target.classList.contains("bot-item")) {
     popup.style.display = "none";
@@ -81,6 +81,10 @@ function beli(paket) {
 🤖 Bot: ${botTerpilih}
 📦 Paket: ${paket}
 
+_*Di Tempat Store ?*_
+_🏪 Store: ${namaStore}_
+_🆔 Partner ID: ${partnerID}_
+
 Mohon untuk segera diproses ya kak 🙏
 
 _Nb : Silahkan tunggu chat dibalas dan akan diproses setelahnya_`;
@@ -114,6 +118,10 @@ function beliDiskon(element, namaPaket) {
 📦 Paket: ${namaPaket}
 ⏳ Durasi: ${durasi}
 💰 Harga Diskon: Rp${finalPrice.toLocaleString("id-ID")} (${discount}% OFF)
+
+_*Di Tempat Store ?*_
+_🏪 Store: $ { namaStore }_
+_🆔 Partner ID: $ { partnerID } _
 
 Mohon untuk segera diproses ya kak 🙏
 
@@ -152,11 +160,9 @@ function getNextEndDate() {
   const month = now.getMonth();
   const today = now.getDate();
 
-  // jika masih sebelum tanggal 22 → target bulan ini
   if (today < 22) {
     return new Date(year, month, 22, 0, 0, 0);
   } 
-  // jika sudah tanggal 22 atau lewat → target bulan depan
   else {
     return new Date(year, month + 1, 22, 0, 0, 0);
   }
@@ -198,6 +204,10 @@ function matikanFlashSale() {
 📦 Paket: ${namaPaket}
 ⏳ Durasi: ${durasi}
 💰 Harga: Rp${price.toLocaleString("id-ID")}
+
+_ * Di Tempat Store ?*_
+_🏪 Store: $ { namaStore }_
+_🆔 Partner ID: $ { partnerID }_
 
 Mohon untuk segera diproses ya kak 🙏
 
@@ -258,6 +268,7 @@ overlay.addEventListener("click", () => {
   overlay.style.display = "none";
 });
 
+
 // ================= BELI MURSUN NORMAL =================
 function beliMursun(paket) {
   
@@ -267,6 +278,10 @@ function beliMursun(paket) {
 
 🚀 Produk: Suntik Followers (Mursun)
 📦 Paket: ${paket}
+
+_*Di Tempat Store ?*_
+_🏪 Store: ${ namaStore }_
+_🆔 Partner ID: ${ partnerID }_
 
 Mohon segera di proses yah kak 🙏
 
@@ -297,6 +312,10 @@ function beliDiskonMursun(element, namaPaket) {
 📘 Detail: ${durasi}
 💰 Harga Diskon: Rp${finalPrice.toLocaleString("id-ID")} (${discount}% OFF)
 
+_*Di Tempat Store ?*_
+_🏪 Store: ${ namaStore }_
+_🆔 Partner ID: ${ partnerID }_
+
 Mohon segera di proses yah kak 🙏
 
 _NB : Silahkan tunggu chat dibalas!_`;
@@ -305,4 +324,4 @@ _NB : Silahkan tunggu chat dibalas!_`;
     `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
     '_blank'
   );
-                                   }
+  }
