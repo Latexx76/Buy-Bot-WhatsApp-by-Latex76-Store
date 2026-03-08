@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -328,4 +328,4 @@ body {
 @keyframes glowYellow {
   from { box-shadow: 0 0 10px #facc15; }
   to { box-shadow: 0 0 25px #facc15; }
-  }
+                             }
